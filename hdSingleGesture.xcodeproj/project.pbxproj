@@ -15,6 +15,9 @@
 		E0C832C31CD051D400CE1B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C832C11CD051D400CE1B44 /* LaunchScreen.storyboard */; };
 		E0C832CE1CD051D400CE1B44 /* hdSingleGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C832CD1CD051D400CE1B44 /* hdSingleGestureTests.m */; };
 		E0C832D91CD051D400CE1B44 /* hdSingleGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C832D81CD051D400CE1B44 /* hdSingleGestureUITests.m */; };
+		E0C832E81CD0535A00CE1B44 /* hdSingleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C832E71CD0535A00CE1B44 /* hdSingleGestureRecognizer.m */; };
+		E0C832EB1CD08B2900CE1B44 /* RSPView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C832EA1CD08B2900CE1B44 /* RSPView.m */; };
+		E0C832FA1CD0A81500CE1B44 /* RSPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C832F91CD0A81500CE1B44 /* RSPView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		E0C832D41CD051D400CE1B44 /* hdSingleGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hdSingleGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C832D81CD051D400CE1B44 /* hdSingleGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hdSingleGestureUITests.m; sourceTree = "<group>"; };
 		E0C832DA1CD051D400CE1B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C832E61CD0535A00CE1B44 /* hdSingleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hdSingleGestureRecognizer.h; sourceTree = "<group>"; };
+		E0C832E71CD0535A00CE1B44 /* hdSingleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hdSingleGestureRecognizer.m; sourceTree = "<group>"; };
+		E0C832E91CD08B2900CE1B44 /* RSPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPView.h; sourceTree = "<group>"; };
+		E0C832EA1CD08B2900CE1B44 /* RSPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPView.m; sourceTree = "<group>"; };
+		E0C832F91CD0A81500CE1B44 /* RSPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSPView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		E0C832B21CD051D400CE1B44 /* hdSingleGesture */ = {
 			isa = PBXGroup;
 			children = (
+				E0FB1EAE1CD1969F00B14A93 /* tools */,
 				E0C832B61CD051D400CE1B44 /* AppDelegate.h */,
 				E0C832B71CD051D400CE1B44 /* AppDelegate.m */,
 				E0C832B91CD051D400CE1B44 /* ViewController.h */,
@@ -138,6 +147,18 @@
 				E0C832DA1CD051D400CE1B44 /* Info.plist */,
 			);
 			path = hdSingleGestureUITests;
+			sourceTree = "<group>";
+		};
+		E0FB1EAE1CD1969F00B14A93 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				E0C832E61CD0535A00CE1B44 /* hdSingleGestureRecognizer.h */,
+				E0C832E71CD0535A00CE1B44 /* hdSingleGestureRecognizer.m */,
+				E0C832E91CD08B2900CE1B44 /* RSPView.h */,
+				E0C832EA1CD08B2900CE1B44 /* RSPView.m */,
+				E0C832F91CD0A81500CE1B44 /* RSPView.xib */,
+			);
+			name = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C832FA1CD0A81500CE1B44 /* RSPView.xib in Resources */,
 				E0C832C31CD051D400CE1B44 /* LaunchScreen.storyboard in Resources */,
 				E0C832C01CD051D400CE1B44 /* Assets.xcassets in Resources */,
 				E0C832BE1CD051D400CE1B44 /* Main.storyboard in Resources */,
@@ -273,6 +295,8 @@
 				E0C832BB1CD051D400CE1B44 /* ViewController.m in Sources */,
 				E0C832B81CD051D400CE1B44 /* AppDelegate.m in Sources */,
 				E0C832B51CD051D400CE1B44 /* main.m in Sources */,
+				E0C832EB1CD08B2900CE1B44 /* RSPView.m in Sources */,
+				E0C832E81CD0535A00CE1B44 /* hdSingleGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +522,7 @@
 				E0C832DF1CD051D400CE1B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C832E01CD051D400CE1B44 /* Build configuration list for PBXNativeTarget "hdSingleGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +531,7 @@
 				E0C832E21CD051D400CE1B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C832E31CD051D400CE1B44 /* Build configuration list for PBXNativeTarget "hdSingleGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +540,7 @@
 				E0C832E51CD051D400CE1B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
